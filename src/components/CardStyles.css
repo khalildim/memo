@@ -57,7 +57,7 @@
   display: none;
 }
 
-@media screen and (max-width: 608px) {
+/* @media screen and (max-width: 608px) {
   .css-1d3osgb-MuiSvgIcon-root {
     display: none !important;
   }
@@ -75,7 +75,7 @@
   .card-container p {
     z-index: 2;
   }
-}
+} */
 
 @media screen and (max-width: 1080px) {
   .css-1d3osgb-MuiSvgIcon-root {
@@ -84,7 +84,7 @@
   .delete-container {
     display: none;
   }
-  .css-1duslk3-MuiSvgIcon-root {
+  .css-zvek3g {
     display: inline !important;
     position: sticky;
     left: 203px;
