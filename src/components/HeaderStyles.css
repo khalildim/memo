@@ -1,0 +1,62 @@
+.header {
+  background-color: rgb(252, 206, 0);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+}
+.header h1 {
+  margin-left: 1.2rem;
+  font-size: 2.4rem;
+}
+.icon-logo {
+  display: flex;
+  align-items: center;
+}
+.icon-logo:first-child {
+  margin-left: 0.8rem;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.icon-logo:first-child:hover {
+  transform: scale(1.02);
+  color: #1d005a;
+}
+
+.weather-container {
+  display: flex;
+  align-items: center;
+  margin-right: 1.2rem;
+  justify-content: space-between;
+}
+.weather-container p {
+  margin: 0 0.3rem;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    display: flex;
+    justify-content: baseline;
+    flex-direction: column;
+    align-items: center;
+  }
+  .weather-container {
+    align-items: center;
+    margin-right: 0;
+    justify-content: center;
+    margin: auto;
+  }
+  .icon-logo:first-child {
+    margin-left: 0;
+  }
+}
+
+/* .icon-logo > *:first-child {
+    margin-left: 0.8rem;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .icon-logo:hover > *:first-child {
+    transform: scale(1.2);
+  } */

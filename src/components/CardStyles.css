@@ -1,0 +1,103 @@
+.card-container {
+  background-color: #ffff;
+  width: 15rem;
+  height: 17rem;
+  box-shadow: 2px 3px 6px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 0.3rem;
+  margin: 0.5rem 2rem;
+  overflow: auto;
+  position: relative; /* add this */
+}
+.card-header-container {
+  border-bottom: 2px solid #00c2ff;
+}
+.card-container p {
+  word-wrap: break-word;
+  margin-top: 1rem;
+  height: 50%;
+  position: absolute;
+}
+.card-header-container h3 {
+  margin-top: 0.4rem;
+}
+.delete-container {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  right: -4.5rem;
+  top: 0.8rem;
+  transition: 0.8s ease-in-out;
+}
+.delete-container:hover {
+  right: 0rem;
+}
+.delete-container:hover .css-1d3osgb-MuiSvgIcon-root {
+  transform: rotate(180deg);
+  transition: 0.8s ease-in-out !important;
+  margin-right: 0.4rem !important;
+}
+.css-1d3osgb-MuiSvgIcon-root {
+  transform: rotate(0deg);
+  transition: 0.8s ease-in-out !important;
+  margin-right: -0.375rem !important;
+}
+.card-delete {
+  background-color: #0ab1f3;
+  border: none;
+  border-radius: 5px;
+  width: 4.5rem;
+  cursor: pointer;
+}
+.css-i4bv87-MuiSvgIcon-root {
+  transition: 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 608px) {
+  .css-1d3osgb-MuiSvgIcon-root {
+    display: none !important;
+  }
+  .delete-container {
+    display: none;
+  }
+  .css-1duslk3-MuiSvgIcon-root {
+    display: inline !important;
+    position: sticky;
+    left: 203px;
+    top: 245px;
+    color: burlywood;
+    z-index: 0;
+  }
+  .card-container p {
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .css-1d3osgb-MuiSvgIcon-root {
+    display: none !important;
+  }
+  .delete-container {
+    display: none;
+  }
+  .css-1duslk3-MuiSvgIcon-root {
+    display: inline !important;
+    position: sticky;
+    left: 203px;
+    top: 245px;
+    color: burlywood;
+    z-index: 0;
+    cursor: pointer;
+    transition: 0.6s ease-in-out !important;
+  }
+  .css-1duslk3-MuiSvgIcon-root:hover {
+    transform: scale(1.2);
+  }
+  .card-container p {
+    z-index: 2;
+  }
+}
